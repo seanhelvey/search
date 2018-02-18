@@ -31,9 +31,7 @@ function DFS(root) {
   if (root.left) {
     DFS(root.left)
   }
-
   console.log(root.data)
-
   if (root.right) {
     DFS(root.right)
   }
