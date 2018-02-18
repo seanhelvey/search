@@ -28,13 +28,32 @@ nodeG.right = nodeI
 nodeI.left = nodeH
 
 function DFS(root) {
-  console.log("Todo: DFS")
+  if (root.left) {
+    DFS(root.left)
+  }
+
+  console.log(root.data)
+
+  if (root.right) {
+    DFS(root.right)
+  }
 }
 
 DFS(nodeF)
 
 function BFS(root) {
-  console.log("Todo: BFS")
+  let myQueue = new Queue()
+  myQueue.enqueue(root)
+  while (!myQueue.isEmpty()) {
+    let currentTreeNode = myQueue.dequeue()
+    console.log(currentTreeNode.data)
+    if (currentTreeNode.left) {
+      myQueue.enqueue(currentTreeNode.left)
+    }
+    if (currentTreeNode.right) {
+      myQueue.enqueue(currentTreeNode.right)
+    }
+  }
 }
 
 BFS(nodeF)
