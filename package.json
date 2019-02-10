@@ -1,0 +1,27 @@
+{
+  "name": "treeSearch",
+  "version": "1.0.0",
+  "description": "## Tree data matches [wikipedia tree traversal examples](https://en.wikipedia.org/wiki/Tree_traversal#Depth-first_search) ![wikipedia tree examples](https://upload.wikimedia.org/wikipedia/commons/7/77/Sorted_binary_tree_inorder.svg)",
+  "main": "Node.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gSchool/treeSearch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gSchool/treeSearch/issues"
+  },
+  "homepage": "https://github.com/gSchool/treeSearch#readme"
+}
